@@ -15,7 +15,7 @@ export default function Home() {
     fetcher
   );
 
-  const currentDate = new Date('2022-12-25T01:32:30Z');
+  const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
 
   const destinations = data?.destinations.map((destination) => {
