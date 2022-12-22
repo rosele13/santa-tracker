@@ -1,6 +1,6 @@
 {
-  "name": "next-leaflet-starter",
-  "homepage": "https://next-leaflet-starter.netlify.app",
+  "name": "santa-tracker",
+  "homepage": "https://rosele13.github.io/santa-tracker",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Colby Fayock <hello@colbyfayock.com>",
@@ -8,14 +8,14 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "format": "npx prettier --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/next-leaflet-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/colbyfayock/next-leaflet-starter/issues"
+    "url": "https://github.com/rosele13/santa-tracker"
   },
   "dependencies": {
     "copy-webpack-plugin": "^11.0.0",
@@ -25,6 +25,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-leaflet": "^4.2.0",
-    "sass": "^1.57.0"
+    "sass": "^1.57.0",
+    "swr": "^2.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
